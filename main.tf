@@ -3,9 +3,9 @@
 provider "aws"{
 
 region = "us-east-2"
-access_key = "AKIAVQ2ZX3ZHWUNORRXH"
+access_key = "AKSEIAVQ2ZXDSORRXH"
 
-secret_key = "jim+n3HBOw8suXSwUUSMaP/jApaLgx45GQMyB8tQ"
+secret_key = "jm+n3HBOw8suXWQRUSMaP/jApaLSx45GQMyM8IQ"
 }
 
 
@@ -38,7 +38,7 @@ tags = {
 
 
 resource "aws_s3_bucket" "example2" {
-  bucket = "my-ttff23-test-bucket"
+  bucket = "my-tt23-test-bucket"
 
   tags = {
     Name        = "My bucket"
