@@ -38,7 +38,7 @@ tags = {
 
 
 resource "aws_s3_bucket" "example2" {
-  bucket = "my-tt23-test-bucket"
+  bucket = "my-ttff23-test-bucket"
 
   tags = {
     Name        = "My bucket"
