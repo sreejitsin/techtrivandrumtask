@@ -5,8 +5,8 @@ tar -czf /root/backup/wp-backup-${nowdate}.tar.gz -C /var/www/mydomain.com/wordp
 
 mysqldump wordpress > /root/backup/wordpress-${nowdate}.sql && echo "backup created"
 echo "uploading to s3"
-aws s3 cp /root/backup/wp-backup-${nowdate}.tar.gz s3://my-ttff23-test-bucket/wordpress_files/ || echo "upload failed"
-aws s3 cp /root/backup/wordpress-${nowdate}.sql s3://my-ttff23-test-bucket/wordpress_dbs/ || echo "upload failed" 
+aws s3 cp /root/backup/wp-backup-${nowdate}.tar.gz s3://my-tt23-test-bucket/wordpress_files/ || echo "upload failed"
+aws s3 cp /root/backup/wordpress-${nowdate}.sql s3://my-tt23-test-bucket/wordpress_dbs/ || echo "upload failed" 
 echo "upload completed"
 
 # create database if not exists 
